@@ -37,7 +37,7 @@ INIT_TYPE="init" # init.{x86/nextarm/nextarm_tvbox}
 # Modules that will be added to intramsfs
 MODULES=("overlay" "overlayfs" "squashfs" "fuse")
 # Packages that will be installed
-PACKAGES=("mc" "libbrotli1" "libmicrohttpd12")
+PACKAGES=("mc" "libbrotli1" "libmicrohttpd12" "libjsoncpp1" "python3-requests")
 
 
 ### Device customisation
