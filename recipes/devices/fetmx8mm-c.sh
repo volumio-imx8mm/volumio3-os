@@ -18,8 +18,7 @@ DEVICEFAMILY="imx8mm"
 
 # tarball from DEVICEFAMILY repo to use
 #DEVICEBASE=${DEVICE} # Defaults to ${DEVICE} if unset
-#DEVICEREPO="https://github.com/congocongo/platform-${DEVICEFAMILY}.git"
-DEIVCEREPO="/home/thorn/v/platform-${DEVICEFAMILY}"
+DEVICEREPO="https://github.com/volumio-imx8mm/platform-${DEVICEFAMILY}.git"
 
 ### What features do we want to target
 # TODO: Not fully implement
@@ -38,7 +37,7 @@ INIT_TYPE="init" # init.{x86/nextarm/nextarm_tvbox}
 # Modules that will be added to intramsfs
 MODULES=("overlay" "overlayfs" "squashfs" "fuse")
 # Packages that will be installed
-# PACKAGES=("u-boot-tools")
+PACKAGES=("mc" "libbrotli1" "libmicrohttpd12")
 
 
 ### Device customisation
